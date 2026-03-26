@@ -1,50 +1,77 @@
-🕵️‍♂️ 99th Precinct: Case Files 🔍
-[TR] Brooklyn 99 dünyasına hoş geldiniz dedektif! Bu interaktif web oyununda, 99. bölgenin en karmaşık vakalarını çözmek için delilleri incelemeli ve suçluları adalete teslim etmelisiniz.
+Haklısın knk, madem GitHub'a koyuyoruz, oraya bakan bir İK uzmanı veya başka bir yazılımcı "Vay be, hem kod yazıyor hem de dokümantasyonu jilet gibi" desin.
 
-[EN] Welcome to the 99th Precinct, detective! In this interactive web game, you must examine evidence and bring criminals to justice to solve the most complex cases of the 99th squad.
+İşte klasör yapısından teknolojilere kadar her şeyi kapsayan, Professional Edition README.md içeriği. Bunu VS Code'da oluşturup git push yaparsan profilin seviye atlar.
 
-🚀 Proje Özellikleri / Features
-[TR] Dinamik Vaka Sistemi: Kolay, Normal ve Zor seviyelerinde farklı hikayeler.
+🕵️‍♂️ 99th Precinct: Tactical Case Simulator
+🇹🇷 Türkçe Proje Tanıtımı
+Genel Bakış
+99th Precinct: Case Files, popüler "Brooklyn Nine-Nine" dizisinden ilham alınarak geliştirilmiş, tarayıcı tabanlı bir interaktif dedektiflik oyunudur. Oyuncular, farklı zorluk seviyelerindeki vakaları çözmek için delilleri analiz eder, şüpheli ifadelerini sorgular ve mantık yürüterek suçluyu bulmaya çalışır.
 
-[EN] Dynamic Case System: Different stories across Easy, Normal, and Hard levels.
+Öne Çıkan Özellikler
+Karakter Entegrasyonu: Jake Peralta'dan Kaptan Holt'a kadar 7 farklı dedektif profili.
 
-[TR] İnteraktif SorguBank: Zor modda şüphelilerin ifadelerine isim sorgulayarak erişim.
+Kademeli Zorluk Sistemi:
 
-[EN] Interactive Interrogation Bank: Access suspect statements by searching names in Hard mode.
+Easy (Cheddar Vakası): Temel gözlem yeteneği gerektirir.
 
-[TR] Karakter Seçimi: Favori 99 karakterinizle (Jake, Amy, Holt...) göreve başlayın.
+Normal (Müze Soygunu): Çelişkili ifadeleri yakalama odaklı.
 
-[EN] Character Selection: Start your mission with your favorite 99 characters.
+Hard (Malikane Cinayeti): "SorguBank" terminalini kullanarak derinlemesine analiz.
 
-🛠️ Kullanılan Teknolojiler / Tech Stack
-HTML5 - Yapısal kurgu / Structural layout
+İnteraktif Sorgu Terminali: Kullanıcının manuel veri girişi yaparak spesifik ifadelere ulaştığı özel bir modal sistemi.
 
-CSS3 - Modern UI & Animasyonlar / Modern UI & Animations
+Responsive Tasarım: "Yellow Folder" estetiği ile tüm cihazlarda uyumlu arayüz.
 
-JavaScript (ES6+) - Oyun mantığı & DOM manipülasyonu / Game logic
+Teknik Mimari
+DOM Manipülasyonu: Dinamik içerik yönetimi ve vaka geçişleri.
 
-FontAwesome - İkon kütüphanesi / Icon library
+State Management: Seçilen dedektif ve vaka verilerinin oyun döngüsü boyunca takibi.
 
-📖 Nasıl Oynanır? / How to Play?
-[TR] Bir dedektif profili seçin.
+CSS Keyframes: Daktilo efekti ve panel geçiş animasyonları.
 
-[EN] Choose a detective profile.
+🇺🇸 English Project Description
+Overview
+99th Precinct: Case Files is a browser-based interactive detective simulation inspired by the "Brooklyn Nine-Nine" series. Players analyze evidence, cross-examine suspect statements, and use deductive reasoning to solve crimes across varying difficulty tiers.
 
-[TR] Zorluk seviyesini belirleyin ve vaka dosyasını açın.
+Key Features
+Character Selection: Choose from 7 iconic detectives, each with unique quotes and aesthetics.
 
-[EN] Select the difficulty level and open the case file.
+Tiered Case System:
 
-[TR] Kanıtları ve fotoğrafları inceleyin. Zor modda "SorguBank" butonunu kullanın.
+Easy: Visual evidence matching.
 
-[EN] Examine evidence and photos. Use the "Interrogation Bank" button in Hard mode.
+Normal: Identifying logical fallacies in alibis.
 
-[TR] Suçlunun adını yazın ve dosyayı kapatın!
+Hard: Advanced investigation using the "Interrogation Bank" terminal.
 
-[EN] Type the criminal's name and close the file!
+Custom Interrogation Terminal: A specialized modal system allowing users to manually query suspect database logs.
 
-📸 Ekran Görüntüleri / Screenshots
-Buraya oyunun görsellerini ekleyebilirsin!
+UI/UX Design: A thematic "Crime Folder" interface built with a mobile-first approach.
 
-📝 Not / Note
-[TR] Bu proje bir web tasarım ve kodlama öğrencisi tarafından, eğitim amaçlı ve Brooklyn Nine-Nine dizisine olan sevgiyle geliştirilmiştir.
-[EN] This project was developed by a web design and coding student for educational purposes and out of love for the Brooklyn Nine-Nine series.
+Technical Stack
+Vanilla JavaScript: Core game logic and dynamic rendering without external frameworks.
+
+CSS3 Modern Features: Custom variables, Flexbox/Grid layouts, and sophisticated animations.
+
+Asynchronous UX: Smooth transitions between introduction, selection, and investigation phases.
+
+📂 Project Structure / Proje Yapısı
+Bash
+
+├── img/                # Visual assets (Detectives, Evidence, UI)
+├── index.html          # Main structural entry point
+├── style.css           # Custom themes and animations
+├── script.js           # Game engine and case database
+└── README.md           # Documentation
+🛠️ Setup / Kurulum
+Clone the repository:
+
+Bash
+
+git clone https://github.com/merveayliz/NineNine.git
+Open index.html in your favorite browser.
+
+Start your shift at the 99th!
+
+Developed with ❤️ by Merve Ayliz
+Web Design & Coding Student | AI & Software Enthusiast
