@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99th Precinct | Case Files</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=Plus+Jakarta+Sans:wght@400;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-screen">
+        <h1 id="typewriter"></h1>
+    </div>
+
+    
+<section id="case-room" class="hidden">
+    <div class="folder"> 
+        <div class="folder-header">
+            <span class="case-id">CASE #99-2026</span>
+            <h2 id="current-case-title">Kayıp Yoğurt Vakası</h2>
+        </div>
+        
+        <div class="folder-content">
+            <div id="evidence-list" class="evidence-container">
+                <!-- Kanıtlar buraya JavaScript ile dinamik gelecek -->
+            </div>
+            
+            <div class="investigation-footer">
+                <p class="instruction-text">Suçluyu bul ve aşağıya yaz!</p>
+                <div class="input-group">
+                    <input type="text" id="suspect-input" placeholder="Şüphelinin adı...">
+                    <button class="solve-btn" onclick="checkCriminal()">DOSYAYI KAPAT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main id="main-content" class="hidden">
+    <header class="precinct-header">
+        <div class="badge-icon"><i class="fas fa-shield-halved"></i></div>
+         <h1 class="mini-title">99th <span>PRECINCT</span></h1>
+          <div class="selection-wrapper">
+             <span class="line"></span>
+             <h2 class="selection-text">ACTIVE CASE: PERSONNEL ASSIGNMENT</h2>
+             <span class="line"></span>
+         </div>
+            <p class="instruction">Lütfen görev için bir dedektif profili seçin.</p>
+    </header>
+
+    <div id="char-grid" class="selection-grid"></div>
+
+    <section id="difficulty-panel" class="hidden">
+        <h2 class="selection-text">ZORLUK SEVİYESİ SEÇİN</h2>
+        <div class="mode-container">
+            <div class="mode-card" onclick="prepareCase('kolay')"><h3>KOLAY</h3><p>Çaylak Dedektif</p></div>
+            <div class="mode-card" onclick="prepareCase('normal')"><h3>NORMAL</h3><p>Saha Dedektifi</p></div>
+            <div class="mode-card" onclick="prepareCase('zor')"><h3>ZOR</h3><p>Özel Harekat</p></div>
+        </div>
+    </section>
+</main>
+
+        <div id="custom-alert" class="hidden">
+            <div class="alert-content">
+                <i class="fas fa-bell"></i>
+                <p id="alert-message"></p>
+                <button  id="bt-p"   onclick="closeAlert()">ANLAŞILDI</button>
+            </div>
+        </div>
+        
+        <div id="congrats-panel" class="hidden">
+            <div class="holt-card">
+                <img src="img/holt.jpg" alt="Captain Holt" class="holt-img">
+                <div class="holt-message">
+                    <h2>TEBRİKLER DEDEKTİF.</h2>
+                    <p>Dosya başarıyla çözüldü. Disiplinli çalışman gözümden kaçmadı.</p>
+                    <span class="badge-99">99th PRECINCT</span>
+                </div>
+            </div>
+        </div>
+
+ <!-- Sorgu Butonu: Sadece JS tarafından 'zor' modda görünür yapılacak -->
+<button id="interrogation-btn" class="interrogation-trigger hidden" onclick="openInterrogation()">
+    <i class="fas fa-database"></i> SORGUBANK VERİLERİ
+</button>
+
+<!-- Sorgu Modalı -->
+<div id="interrogation-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeInterrogation()">&times;</span>
+        <div class="modal-header">
+            <h3><i class="fas fa-shield-alt"></i> 99th PRECINCT - SORGUBANK</h3>
+            <span class="status-badge">ERİŞİM ONAYLANDI</span>
+        </div>
+        
+        <div class="modal-body">
+            <p class="prompt-text">İfadesini okumak istediğiniz kişinin adını yazın:</p>
+            <p class="hint-text">(baba, sevgili, rakip, komşu)</p>
+            
+            <div class="search-box">
+                <input type="text" id="statement-input" placeholder="İsim sorgula...">
+                <button class="action-btn" onclick="readStatement()">OKU</button>
+            </div>
+            
+            <div id="statement-output" class="output-area">
+                <!-- İfade buraya gelecek -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+     <script type="module" src="script.js"></script>
+</body>
+</html>
