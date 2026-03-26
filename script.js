@@ -88,40 +88,35 @@ const characters = [
     { id: 'gina', name: 'Gina Linetti', quote: 'Ben bir ikonum.', img: 'img/gina.jpg' }
 ];
 
-// Oyunun durumunu takip eden global değişkenler
-let selectedCase = null;      // O an oynanan vakayı tutar
-let selectedDetective = null; // Seçilen dedektifi tutar
-let index = 0;                // Daktilo efekti için harf sırasını tutar
-const text = "BROOKLYN 99";   // Girişte yazılacak metin
+let selectedCase = null;    
+let selectedDetective = null; 
+let index = 0;               
+const text = "BROOKLYN 99";   
 
-// --- 2. GİRİŞ ANİMASYONU (INTRO) ---
 const typewriterElement = document.getElementById('typewriter');
 
-// Sayfa tamamen yüklendiğinde daktilo animasyonunu başlatır
 window.addEventListener('DOMContentLoaded', () => {
     type();
 });
 
-// Metni harf harf ekrana yazan fonksiyon (Recursive - Kendi kendini çağırır)
 function type() {
     if (index < text.length) {
         typewriterElement.innerHTML += text.charAt(index);
         index++;
-        setTimeout(type, 150); // Her harf arası 150ms bekler
+        setTimeout(type, 150);
     } else {
-        setTimeout(finishIntro, 1000); // Yazı bitince 1 saniye bekle ve sahneyi bitir
+        setTimeout(finishIntro, 1000); 
     }
 }
 
-// Giriş ekranını yukarı kaydırıp ana içeriği (karakter seçimi) açan fonksiyon
 function finishIntro() {
-    typewriterElement.classList.add('move-up'); // CSS animasyonunu tetikler
+    typewriterElement.classList.add('move-up'); 
     setTimeout(() => {
         const intro = document.getElementById('intro-screen');
         intro.style.opacity = '0';
-        intro.style.pointerEvents = 'none'; // Ekranın üzerine tıklanmasını engeller
+        intro.style.pointerEvents = 'none';
         
-        renderCharacters(); // Karakter kartlarını ekrana basar
+        renderCharacters(); 
         
         const main = document.getElementById('main-content');
         main.classList.remove('hidden');
@@ -129,13 +124,10 @@ function finishIntro() {
     }, 800);
 }
 
-// --- 3. KARAKTER SEÇİMİ (SELECTION) ---
-// JavaScript'teki karakter listesini alıp HTML içine kartlar olarak yerleştirir
 function renderCharacters() {
     const charGrid = document.getElementById('char-grid');
     if(!charGrid) return; 
 
-    // Her karakter için bir HTML şablonu oluşturur ve birleştirir
     charGrid.innerHTML = characters.map(char => `
         <div class="char-card" onclick="selectChar('${char.id}')">
             <img src="${char.img}" alt="${char.name}" class="char-card-img">
@@ -145,20 +137,15 @@ function renderCharacters() {
     `).join('');
 }
 
-// Bir dedektif kartına tıklandığında çalışır
 window.selectChar = function(id) {
-    // Tıklanan dedektifin bilgilerini veriden bulur
     selectedDetective = characters.find(c => c.id === id);
     
-    // Karakter seçim grid'ini gizler
     document.getElementById('char-grid').classList.add('hidden');
     
-    // Zorluk seviyesi seçim panelini görünür yapar
     const diffPanel = document.getElementById('difficulty-panel');
     diffPanel.classList.remove('hidden');
     diffPanel.classList.add('visible');
-    
-    // Üstteki başlık yazılarını günceller
+
     document.querySelector('.selection-text').innerText = "DETECTIVE: " + selectedDetective.name.toUpperCase();
     document.querySelector('.instruction').innerText = "Vaka zorluğunu seçin.";
 };
@@ -166,18 +153,16 @@ window.selectChar = function(id) {
 window.prepareCase = (level) => {
     selectedCase = cases[level]; 
     
-    // Diğer panelleri kapat
     document.getElementById('difficulty-panel').classList.remove('visible');
     document.getElementById('difficulty-panel').classList.add('hidden');
     document.querySelector('.precinct-header').classList.add('hidden'); 
     document.getElementById('case-room').classList.remove('hidden');
     
-    // --- ÖNEMLİ: SORGUBANK BUTON KONTROLÜ ---
     const interBtn = document.getElementById('interrogation-btn');
     if (level === 'zor') {
-        interBtn.classList.remove('hidden'); // Sadece 'zor' seçilince görünür yap
+        interBtn.classList.remove('hidden');
     } else {
-        interBtn.classList.add('hidden');    // Diğerlerinde gizli kalsın
+        interBtn.classList.add('hidden');    
     }
 
     document.getElementById('current-case-title').innerText = selectedCase.realTitle;
@@ -194,11 +179,9 @@ window.prepareCase = (level) => {
     `;
 };
 
-// MODAL AÇMA/KAPATMA VE OKUMA FONKSİYONLARI
 window.openInterrogation = () => {
     const modal = document.getElementById('interrogation-modal');
     modal.classList.remove('hidden');
-    // Flex özelliğini korumak için inline stil müdahalesi
     modal.style.display = "flex"; 
 };
 
@@ -220,28 +203,23 @@ window.readStatement = () => {
     }
 };
 
-// Alert kapandığında veya oyun bittiğinde butonu saklamayı unutma
 window.closeAlert = () => { 
     document.getElementById('custom-alert').classList.add('hidden'); 
-    // Ana ekrana dönülüyorsa butonu gizle
+    
     document.getElementById('interrogation-btn').classList.add('hidden');
 };
-// Kullanıcının girdiği ismi vakanın katiliyle karşılaştırır
 window.checkCriminal = () => {
     const input = document.getElementById('suspect-input');
-    const guess = input.value.trim().toLowerCase(); // Boşlukları siler ve küçük harfe çevirir
+    const guess = input.value.trim().toLowerCase(); 
     
-    // Doğru cevap kontrolü
     if(selectedCase && guess === selectedCase.killer.toLowerCase()) {
-        document.getElementById('congrats-panel').classList.remove('hidden'); // Kaptan Holt tebrik paneli
-        setTimeout(() => { location.reload(); }, 3000); // 3 saniye sonra oyunu başa döndürür
+        document.getElementById('congrats-panel').classList.remove('hidden'); 
+        setTimeout(() => { location.reload(); }, 3000); 
     } else {
         showAlert("Hatalı tespit! Delilleri tekrar incele dedektif.");
     }
 };
 
-// --- 5. EFEKTLER VE YARDIMCILAR (UI/UX) ---
-// Fareyle karakter kartlarının üzerine gelindiğinde üstteki başlığı günceller
 document.addEventListener('mouseover', (e) => {
     const card = e.target.closest('.char-card');
     if (card) {
@@ -251,7 +229,6 @@ document.addEventListener('mouseover', (e) => {
     }
 });
 
-// Özel uyarı mesajı (Alert) gösterir
 window.showAlert = (msg) => {
     document.getElementById('alert-message').innerText = msg;
     document.getElementById('custom-alert').classList.remove('hidden');
