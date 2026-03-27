@@ -70,7 +70,8 @@ kolay: {
     `,
     killer: "Komşu", 
     images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg",] 
-},
+}
+};
 
 const statements = {
     "baba": "Oğlum o kazadan beri hiç huzur bulamadı. Meksika'ya kaçmak istiyordu çünkü birilerinin onu takip ettiğini söylüyordu. O gece yanına gitmedim, pişmanım.",
