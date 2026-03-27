@@ -23,7 +23,7 @@ kolay: {
     `,
 
     killer: "Sarah", 
-    images: ["img/Sarah.jpg", "img/Golden_Retriever.jpg",] 
+    images: ["img/Sarah.jpg", "img/Golden_Retriever.jpg"] 
 },
    normal: { 
     realTitle: "Müze Soygunu: Mühürlü İhanet",
@@ -50,7 +50,7 @@ kolay: {
         [ARKEOLOJİ ÖĞRETMENİ]: "Mührün çalınması dekanın çok işine gelir; müze sigortasından büyük bir para alacak."
     `,
     killer: "Dekan", 
-    images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg",] 
+    images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg"] 
 },
    zor: { 
     realTitle: "Yıldız Futbolcunun Gizemli Ölümü",
@@ -69,7 +69,7 @@ kolay: {
         4. [BAHÇE DETAYI]: Komşu Martha'nın bahçesindeki Zakkum çiçeklerinin bir kısmı yeni budanmış ve toprağın altında Thorne'un o gece giydiği ceketin bir düğmesi bulundu.
     `,
     killer: "Komşu", 
-    images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg",] 
+    images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg"] 
 }
 };
 
