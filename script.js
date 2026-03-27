@@ -9,8 +9,7 @@ kolay: {
     `,
     evidence: `
         1. [OLAY YERİ]: Parktaki bankın üzerinde 18 ayar pırlanta bir yüzük ve yere saçılmış kahverengi tanecikler bulundu. (Bkz: Fotoğraf 2)
-        2. [KANIT DOLABI]: Şüphelilerin dolabından çıkanlar: Bir adet lüks çanta anahtarı, altın sarısı ince köpek tüyleri ve 'Premium Kalp Şekilli' köpek ödül mamaları. (Bkz: Fotoğraf 1)
-        3. [TEKNİK ANALİZ]: Güvenlik kameraları tam kaçırılma anında 'Sinyal Kaybı' yaşadı; bu sıradan bir hırsızın yapabileceği bir şey değil.
+        
     `,
     interrogation: `
         [ŞÜPHELİ: SARAH] (Bkz: Fotoğraf 3)
@@ -38,7 +37,7 @@ kolay: {
     `,
 
     evidence: `
-        1. [DİJİTAL KANIT]: Güvenlik odasındaki monitörlerde 'SYSTEM COMPROMISED' uyarısı var. Hack işlemi içeriden yapılmış. (Bkz: Fotoğraf - Monitörler)
+        1. [DİJİTAL KANIT]: Güvenlik odasındaki monitörlerde 'SYSTEM COMPROMISED' uyarısı var. Hack işlemi içeriden yapılmış.
         2. [AYAKKABI İZİ]: Odadaki tozlu zeminde 38 numara, ince topuklu bir kadın ayakkabı izi bulundu. Bu izler doğrudan boşalan sergi standına gidiyor.
         3. [FİZİKSEL KANIT]: Müze girişindeki çöp kutusunda, parçalanmış bir "Dekanlık Giriş Kartı" ve üzerinde Dekan'ın asistanına ait parmak izleri olan bir çift eldiven bulundu.
     `,
@@ -47,7 +46,7 @@ kolay: {
         [GÜVENLİKÇİ]: "Ben devriyedeydim, her şey normaldi. Kameralar kararınca odaya koştum ama çok geçti."
         [TEMİZLİKÇİ]: "Gece 02:00 gibi asistan hanımı koridorda telaşlı gördüm, dekan beyin odasına gidiyordu."
         [DEKAN]: "O gece evimdeydim. Asistanım koleksiyon odasının anahtar kodlarını bilen tek kişiydi. Maalesef bana ihanet ettiğini düşünüyorum."
-        [ASİSTAN (SEVGİLİ)]: "Aramızdaki ilişki yüzünden beni suçluyor! O gece dekanın yanındaydım, benden eldivenlerimi ve kartımı istedi, 'sergi alanını kontrol edeceğim' dedi. Ben hırsız değilim!"
+        [ASİSTAN (SEVGİLİ)]: "Aramızdaki ilişki yüzünden beni suçluyor! O gece dekanın yanındaydım, benden eldivenlerimi ve kartımı istedi, 'sergi alanını kontrol edeceğim' dedi.Ona güvendim,eşyaları verdim.Ben hırsız değilim!"
         [ARKEOLOJİ ÖĞRETMENİ]: "Mührün çalınması dekanın çok işine gelir; müze sigortasından büyük bir para alacak."
     `,
     killer: "Dekan", 
@@ -56,26 +55,28 @@ kolay: {
    zor: { 
     realTitle: "Yıldız Futbolcunun Gizemli Ölümü",
     description: `
-        YER: Thorne Malikanesi - Kütüphane. 
+     YER: Thorne Malikanesi - Kütüphane. 
         SAAT: 23:45. 
-        Şehrin göz bebeği Alexander Thorne, viski kadehi elinde, masasının başında ölü bulundu. 
-        Masanın üzerinde alelacele değiştirilmiş bir vasiyetname ve Mexico City'ye bir gidiş bileti duruyor. 
-        Otopside viskisine karıştırılmış nadir bir bitkisel zehir bulundu.
+        Alexander Thorne, çalışma masasında elinde viski kadehiyle ölü bulundu. 
+        Masanın üzerinde Mexico City'ye bir gidiş bileti ve yarısı yırtılmış eski bir gazete kupürü var. 
+        Kütüphanenin camı açık, ancak içeride hiçbir boğuşma izi yok. 
+        Otopside, Thorne'un nadir bulunan 'Zakkum Ekstresi' ile zehirlendiği kesinleşti.
     `,
     evidence: `
-        1. [VİSKİ KADEHİ]: Kadehin kenarında ruj izi yok ama kütüphanede hafif bir papatya çayı kokusu var.
-        2. [BİLET]: Futbolcu o gece kaçmaya hazırlanıyordu. Valizinde komşusunun bahçesine düşen topu almak için kullandığı gizli kapının anahtarı bulundu.
-        3. [KOMŞU BAHÇESİ]: Yaşlı kadının bahçesindeki saksıların arkasında, kurbanın evinde kullanılan viski markasına ait boş bir şişe ve bitkisel zehrin elde edildiği 'Zakkum' çiçekleri bulundu.
+        1. [VİSKİ KADEHİ]: Kadehin dibinde garip bir tortu var. Viskinin içine karıştırılan zehir, yoğun bir papatya ve bal aromasıyla gizlenmiş.
+        2. [GAZETE KUPÜRÜ]: 10 yıl öncesine ait bir kaza haberi: 'Zengin Gençlerin Karıştığı Kazada 8 Yaşındaki Çocuk Hayatını Kaybetti'. Şoförün kimliği hiçbir zaman belirlenememiş.
+        3. [GİZLİ ANAHTAR]: Thorne'un avucunda sımsıkı tuttuğu küçük bir anahtar bulundu. Bu anahtar, komşu bahçesine açılan gizli ferforje kapıya ait.
+        4. [BAHÇE DETAYI]: Komşu Martha'nın bahçesindeki Zakkum çiçeklerinin bir kısmı yeni budanmış ve toprağın altında Thorne'un o gece giydiği ceketin bir düğmesi bulundu.
     `,
     killer: "Komşu", 
-    images: ["img/will_evidence.jpg", "img/ticket_evidence.jpg"] 
-}
-};
+    images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg",] 
+},
+
 const statements = {
-    "baba": "Oğlumla borsa yüzünden tartıştık doğru, ama o benim tek servetimdi. Onu öldürüp vasiyeti neden masada bırakayım?",
-    "ex sevgili": "Meksika'ya bensiz gidecekti. O gece kapısına gittim, kütüphanenin ışığı yanıyordu ama içeriden yaşlı bir kadının sesini duydum, kavga ediyorlardı.",
-    "ex arkadaşı": "Sahada düşmandık ama ölümü benim kariyerime bir şey katmaz. O gece kulüpte antrenmandaydım.",
-    "komşu": "Zavallı Alexander... Çok gürültü yapardı, gençler işte. O gece ona biraz kurabiye ve papatya çayı götürmüştüm, kapıyı açık bırakmıştı. İçeride kimse yoktu, çayını bırakıp çıktım."
+    "baba": "Oğlum o kazadan beri hiç huzur bulamadı. Meksika'ya kaçmak istiyordu çünkü birilerinin onu takip ettiğini söylüyordu. O gece yanına gitmedim, pişmanım.",
+    "sevgili": "Alexander o gece çok gergindi. Sürekli pencereden dışarı bakıyordu. Bana 'O yaşlı kadın her şeyi biliyor, beni izliyor' dedi ama ben delirdiğini sanmıştım.",
+    "rakip": "Onu sahada bitirmek isterdim, masasında değil. O gece antrenmandaydım, 50 şahidim var. Ama o kazayı hepimiz biliyorduk, vicdanı onu zaten öldürüyordu.",
+    "komşu": "Zavallı Alexander... O gece ona uyumasına yardımcı olsun diye kendi özel karışımım olan ballı papatya çayımından bir fincan götürdüm. Kapıyı her zamanki gibi açık bırakmıştı. Çayı masasına bıraktım, viski kadehini dolduruyordu. 'Teşekkürler Martha' dedi ve ben çıktım. O gece çok sakindi..."
 };
 
 const characters = [
@@ -92,9 +93,7 @@ let selectedCase = null;
 let selectedDetective = null; 
 let index = 0;               
 const text = "BROOKLYN 99";   
-
 const typewriterElement = document.getElementById('typewriter');
-
 window.addEventListener('DOMContentLoaded', () => {
     type();
 });
