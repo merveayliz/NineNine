@@ -1,9 +1,4 @@
-Haklısın knk, madem GitHub'a koyuyoruz, oraya bakan bir İK uzmanı veya başka bir yazılımcı "Vay be, hem kod yazıyor hem de dokümantasyonu jilet gibi" desin.
-
-İşte klasör yapısından teknolojilere kadar her şeyi kapsayan, Professional Edition README.md içeriği. Bunu VS Code'da oluşturup git push yaparsan profilin seviye atlar.
-
 🕵️‍♂️ 99th Precinct: Tactical Case Simulator
-🇹🇷 Türkçe Proje Tanıtımı
 Genel Bakış
 99th Precinct: Case Files, popüler "Brooklyn Nine-Nine" dizisinden ilham alınarak geliştirilmiş, tarayıcı tabanlı bir interaktif dedektiflik oyunudur. Oyuncular, farklı zorluk seviyelerindeki vakaları çözmek için delilleri analiz eder, şüpheli ifadelerini sorgular ve mantık yürüterek suçluyu bulmaya çalışır.
 
@@ -29,7 +24,6 @@ State Management: Seçilen dedektif ve vaka verilerinin oyun döngüsü boyunca 
 
 CSS Keyframes: Daktilo efekti ve panel geçiş animasyonları.
 
-🇺🇸 English Project Description
 Overview
 99th Precinct: Case Files is a browser-based interactive detective simulation inspired by the "Brooklyn Nine-Nine" series. Players analyze evidence, cross-examine suspect statements, and use deductive reasoning to solve crimes across varying difficulty tiers.
 
