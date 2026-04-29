@@ -1,4 +1,5 @@
 const cases = {
+    
 kolay: { 
     realTitle: "Cheddar Jr. Kaçırıldı: Parktaki Gölge",
     description: `
@@ -25,6 +26,7 @@ kolay: {
     killer: "Sarah", 
     images: ["img/Sarah.jpg", "img/Golden_Retriever.jpg"] 
 },
+    
    normal: { 
     realTitle: "Müze Soygunu: Mühürlü İhanet",
     
@@ -50,10 +52,11 @@ kolay: {
         [ARKEOLOJİ ÖĞRETMENİ]: "Mührün çalınması dekanın çok işine gelir; müze sigortasından büyük bir para alacak."
     `,
     killer: "Dekan", 
+       
     images: ["img/hacked_screens.jpg", "img/shoe_prints.jpg"] 
 },
-   zor: { 
-    realTitle: "Yıldız Futbolcunun Gizemli Ölümü",
+    
+   zor: { realTitle: "Yıldız Futbolcunun Gizemli Ölümü",
     description: `
      YER: Thorne Malikanesi - Kütüphane. 
         SAAT: 23:45. 
@@ -62,6 +65,7 @@ kolay: {
         Kütüphanenin camı açık, ancak içeride hiçbir boğuşma izi yok. 
         Otopside, Thorne'un nadir bulunan 'Zakkum Ekstresi' ile zehirlendiği kesinleşti.
     `,
+         
     evidence: `
         1. [VİSKİ KADEHİ]: Kadehin dibinde garip bir tortu var. Viskinin içine karıştırılan zehir, yoğun bir papatya ve bal aromasıyla gizlenmiş.
         2. [GAZETE KUPÜRÜ]: 10 yıl öncesine ait bir kaza haberi: 'Zengin Gençlerin Karıştığı Kazada 8 Yaşındaki Çocuk Hayatını Kaybetti'. Şoförün kimliği hiçbir zaman belirlenememiş.
@@ -106,8 +110,7 @@ function type() {
         setTimeout(type, 150);
     } else {
         setTimeout(finishIntro, 1000); 
-    }
-}
+    } }
 
 function finishIntro() {
     typewriterElement.classList.add('move-up'); 
@@ -161,13 +164,12 @@ window.prepareCase = (level) => {
     const interBtn = document.getElementById('interrogation-btn');
     if (level === 'zor') {
         interBtn.classList.remove('hidden');
-    } else {
+    }
+    else {
         interBtn.classList.add('hidden');    
     }
 
     document.getElementById('current-case-title').innerText = selectedCase.realTitle;
-    
-    // Klasör içeriğini bas
     document.getElementById('evidence-list').innerHTML = `
         <div class="evidence-item"><span class="evidence-label">OLAY ÖZETİ</span><p>${selectedCase.description}</p></div>
         <div class="evidence-item"><span class="evidence-label">KANITLAR</span><p>${selectedCase.evidence}</p></div>
@@ -208,6 +210,7 @@ window.closeAlert = () => {
     
     document.getElementById('interrogation-btn').classList.add('hidden');
 };
+
 window.checkCriminal = () => {
     const input = document.getElementById('suspect-input');
     const guess = input.value.trim().toLowerCase(); 
