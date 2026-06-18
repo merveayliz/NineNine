@@ -1,71 +1,60 @@
-🕵️‍♂️ 99th Precinct: Tactical Case Simulator
-Genel Bakış
-99th Precinct: Case Files, popüler "Brooklyn Nine-Nine" dizisinden ilham alınarak geliştirilmiş, tarayıcı tabanlı bir interaktif dedektiflik oyunudur. Oyuncular, farklı zorluk seviyelerindeki vakaları çözmek için delilleri analiz eder, şüpheli ifadelerini sorgular ve mantık yürüterek suçluyu bulmaya çalışır.
+# 🕵️‍♂️ 99th Precinct: Tactical Case Simulator (Case Files)
 
-Öne Çıkan Özellikler
-Karakter Entegrasyonu: Jake Peralta'dan Kaptan Holt'a kadar 7 farklı dedektif profili.
+![Brooklyn Nine-Nine](https://img.shields.io/badge/Theme-Brooklyn_Nine--Nine-blue?style=for-the-badge&logo=warnerbros)
+![JavaScript](https://img.shields.io/badge/Vanilla_JS-ES6+-yellow?style=for-the-badge&logo=javascript)
+![CSS3](https://img.shields.io/badge/CSS3-Modern_Layouts-orange?style=for-the-badge&logo=css3)
 
-Kademeli Zorluk Sistemi:
+An interactive, browser-based detective simulation game inspired by the hit comedy series **"Brooklyn Nine-Nine"**. Step into the 99th precinct, choose your favorite detective, analyze critical evidence, crack suspect alibis, and utilize the advanced "Interrogation Bank" terminal to solve crimes across multiple difficulty tiers!
 
-Easy (Cheddar Vakası): Temel gözlem yeteneği gerektirir.
+---
 
-Normal (Müze Soygunu): Çelişkili ifadeleri yakalama odaklı.
+## 🌍 Language Options / Dil Seçenekleri
+* [English](#english-overview)
+* [Türkçe Genel Bakış](#türkçe-genel-bakış)
 
-Hard (Malikane Cinayeti): "SorguBank" terminalini kullanarak derinlemesine analiz.
+---
 
-İnteraktif Sorgu Terminali: Kullanıcının manuel veri girişi yaparak spesifik ifadelere ulaştığı özel bir modal sistemi.
+## English Overview
 
-Responsive Tasarım: "Yellow Folder" estetiği ile tüm cihazlarda uyumlu arayüz.
+### 🚀 Key Features
+* **Character Integration:** Play as one of the 7 iconic detectives (from Jake Peralta to Captain Holt), each featuring unique quotes, distinct personalities, and custom UI aesthetics.
+* **Tiered Case Difficulty System:**
+  * **Easy (Cheddar Case):** Focuses on basic observation skills and visual evidence matching.
+  * **Normal (Museum Heist):** Centered on identifying logical fallacies and conflicting suspect statements.
+  * **Hard (Manor Murder):** High-stakes investigation utilizing the deep-dive **"SorguBank" Interrogation Terminal**.
+* **Interactive Interrogation Terminal:** A custom-built modal interface where users manually type inputs and query database logs to uncover hidden text/clues.
+* **Thematic UI/UX Design:** Fully responsive, mobile-first design styled around the famous **"Yellow Folder" / "Crime Folder"** police department aesthetic.
 
-Teknik Mimari
-DOM Manipülasyonu: Dinamik içerik yönetimi ve vaka geçişleri.
+### 🛠️ Technical Stack & Architecture
+* **Vanilla JavaScript (ES6+):** Core game loop engine, dynamic rendering, and responsive state management tracking the chosen detective and active case metrics without external frameworks.
+* **Advanced CSS3:** Custom responsive properties, CSS Grid/Flexbox layouts, and sophisticated `@keyframes` animations (including typewriter effects and smooth screen transitions).
+* **Asynchronous UX:** Smooth, non-blocking phase transitions between the intro splash screen, detective selection dashboard, and the active investigation crime scene.
 
-State Management: Seçilen dedektif ve vaka verilerinin oyun döngüsü boyunca takibi.
+---
 
-CSS Keyframes: Daktilo efekti ve panel geçiş animasyonları.
+## Türkçe Genel Bakış
 
-Overview
-99th Precinct: Case Files is a browser-based interactive detective simulation inspired by the "Brooklyn Nine-Nine" series. Players analyze evidence, cross-examine suspect statements, and use deductive reasoning to solve crimes across varying difficulty tiers.
+### 🚀 Öne Çıkan Özellikler
+* **Karakter Entegrasyonu:** Jake Peralta'dan Kaptan Holt'a kadar uzanan 7 farklı ikonik dedektif profili. Her karakter kendine has repliklere, tasarıma ve estetiğe sahiptir.
+* **Kademeli Zorluk ve Vaka Sistemi:**
+  * **Easy (Cheddar Vakası):** Temel gözlem yeteneği ve görsel delil eşleştirme adımları gerektirir.
+  * **Normal (Müze Soygunu):** Şüphelilerin çelişkili ifadelerini ve mantık hatalarını yakalama odaklıdır.
+  * **Hard (Malikane Cinayeti):** Derinlemesine analiz için **"SorguBank"** terminalini zorunlu kılan karmaşık vaka örgüsü.
+* **İnteraktif Sorgu Terminali:** Kullanıcının manuel veri girişi (input) yaparak suçlu veri tabanı günlüklerinden spesifik ifadelere ve gizli ipuçlarına ulaştığı özel bir modal sistemi.
+* **Tematik Arayüz Tasarımı:** Mobil öncelikli (mobile-first) yaklaşımla geliştirilmiş, "Yellow Folder" (Sarı Dosya) polis departmanı konseptini tüm ekranlara yansıtan duyarlı tasarım.
 
-Key Features
-Character Selection: Choose from 7 iconic detectives, each with unique quotes and aesthetics.
+### 🛠️ Teknik Mimari ve Kod Yapısı
+* **Vanilla JavaScript:** Harici hiçbir kütüphane veya framework (React, Vue vb.) kullanılmadan, oyun döngüsü ve dinamik DOM yönetimi saf JS nesneleriyle kurgulanmıştır.
+* **State Management (Durum Yönetimi):** Seçilen dedektif, vaka verileri ve sorgu terminali girdileri oyun boyunca anlık olarak takip edilir ve işlenir.
+* **CSS Keyframes Animasyonları:** Daktilo (typewriter) efektleri, ekranlar arası pürüzsüz panel geçişleri ve tematik animasyonlar saf CSS ile kodlanmıştır.
 
-Tiered Case System:
+---
 
-Easy: Visual evidence matching.
+## 📂 Project Structure / Proje Yapısı
 
-Normal: Identifying logical fallacies in alibis.
-
-Hard: Advanced investigation using the "Interrogation Bank" terminal.
-
-Custom Interrogation Terminal: A specialized modal system allowing users to manually query suspect database logs.
-
-UI/UX Design: A thematic "Crime Folder" interface built with a mobile-first approach.
-
-Technical Stack
-Vanilla JavaScript: Core game logic and dynamic rendering without external frameworks.
-
-CSS3 Modern Features: Custom variables, Flexbox/Grid layouts, and sophisticated animations.
-
-Asynchronous UX: Smooth transitions between introduction, selection, and investigation phases.
-
-📂 Project Structure / Proje Yapısı
-Bash
-
-├── img/                # Visual assets (Detectives, Evidence, UI)
-├── index.html          # Main structural entry point
-├── style.css           # Custom themes and animations
-├── script.js           # Game engine and case database
-└── README.md           # Documentation
-🛠️ Setup / Kurulum
-Clone the repository:
-
-Bash
-
-git clone https://github.com/merveayliz/NineNine.git
-Open index.html in your favorite browser.
-
-Start your shift at the 99th!
-
-Developed with ❤️ by Merve Ayliz
-Web Design & Coding Student | AI & Software Enthusiast
+```bash
+├── img/                # Visual assets (Detectives, Evidence, UI / Görsel Ögeler)
+├── index.html          # Main structural entry point / Ana HTML iskeleti
+├── style.css           # Custom themes, responsive grids & animations / Stil Dosyası
+├── script.js           # Game engine, core logic & case database / Oyun Motoru
+└── README.md           # Project documentation / Proje Dokümantasyonu
