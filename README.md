@@ -8,10 +8,6 @@ An interactive, browser-based detective simulation game inspired by the hit come
 
 ---
 
-## 🌍 Language Options / Dil Seçenekleri
-* [English](#english-overview)
-* [Türkçe Genel Bakış](#türkçe-genel-bakış)
-
 ---
 
 ## English Overview
